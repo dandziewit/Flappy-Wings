@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flappy Wings</title>
+  <meta name="description" content="A visually upgraded Flappy Bird-style browser game.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Flappy Wings</h1>
+  <div id="ui">
+    <button id="startBtn">Start Game</button>
+    <div id="gameOverScreen" class="hidden">
+      <div id="gameOverText">Game Over</div>
+      <div id="finalScore"></div>
+      <button id="restartBtn">Restart</button>
+    </div>
+  </div>
+  <canvas id="gameCanvas" width="400" height="600"></canvas>
+  <div id="scoreDisplay"></div>
+  <!-- Place flap.mp3 and coin.mp3 in a 'sounds' folder next to these files -->
+  <script src="script.js" defer></script>
+</body>
+</html>
