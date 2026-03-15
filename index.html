@@ -5,20 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flappy Wings</title>
   <meta name="description" content="A visually upgraded Flappy Bird-style browser game.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee:wght@400&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Flappy Wings</h1>
-  <div id="ui">
-    <button id="startBtn">Start Game</button>
-    <div id="gameOverScreen" class="hidden">
-      <div id="gameOverText">Game Over</div>
-      <div id="finalScore"></div>
-      <button id="restartBtn">Restart</button>
-    </div>
+  <div class="sky-layers" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
   </div>
-  <canvas id="gameCanvas" width="400" height="600"></canvas>
-  <div id="scoreDisplay"></div>
+
+  <header class="title-wrap">
+    <h1>Flappy Wings</h1>
+    <p class="tagline">Thread the gaps. Own the sky.</p>
+  </header>
+
+  <main class="game-shell">
+    <section class="game-stage" role="application" aria-label="Flappy Wings game area">
+      <canvas id="gameCanvas" width="400" height="600" aria-label="Game canvas"></canvas>
+      <div id="scoreDisplay" aria-live="polite">0</div>
+
+      <div id="ui">
+        <button id="startBtn">Start Game</button>
+        <div id="gameOverScreen" class="hidden">
+          <div id="gameOverText">Game Over</div>
+          <div id="finalScore"></div>
+          <button id="restartBtn">Play Again</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="meta">Built for quick reflexes and short mobile rounds.</footer>
+
   <!-- Place flap.mp3 and coin.mp3 in a 'sounds' folder next to these files -->
   <script src="script.js" defer></script>
 </body>
