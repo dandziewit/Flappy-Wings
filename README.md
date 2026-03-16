@@ -4,14 +4,12 @@ Flappy Wings is a browser-based arcade game inspired by classic Flappy-style gam
 
 The game focuses on responsive controls, smooth animations, and a clean, readable codebase designed to be easy to review and extend.
 
-Live Demo:
+Live Demo
 https://dandziewit.github.io/Flappy-Wings/
 
 Features
 
-Real-time game loop using request
-
-AnimationFrame
+Real-time game loop using requestAnimationFrame
 
 Canvas-based rendering for bird, pipes, and environment
 
@@ -33,8 +31,7 @@ JavaScript (ES6+)
 
 HTML5 Canvas API
 
-## Screenshots
-
+Screenshots
 ![Gameplay](<Screenshot 2026-03-16 171733.png>)
 
 ![Game Screen](<Screenshot 2026-03-16 171801.png>)
@@ -48,7 +45,7 @@ Flap	Touch Tap
 Running Locally
 Python Server (Recommended)
 
-From the project folder:
+From the project folder run:
 
 py -m http.server 8080
 
@@ -87,7 +84,7 @@ score system
 
 Architecture Overview
 
-The game follows a lightweight interactive application architecture:
+The game follows a lightweight interactive application architecture.
 
 Initialization
 
@@ -95,7 +92,7 @@ Canvas and UI elements load from index.html.
 
 Game State Management
 
-Bird state, pipe list, score, and game status tracked in script.js.
+Bird state, pipe list, score, and game status are tracked in script.js.
 
 Game Loop
 
@@ -103,7 +100,7 @@ requestAnimationFrame updates physics and rendering.
 
 Rendering
 
-Bird and pipe classes render to canvas each frame.
+Bird and pipe classes render to the canvas each frame.
 
 Input Handling
 
@@ -139,4 +136,4 @@ Responsive UX design
 
 License
 
-MIT License
+This project is licensed under the MIT License.
