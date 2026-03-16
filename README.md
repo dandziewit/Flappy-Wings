@@ -9,7 +9,9 @@ https://dandziewit.github.io/Flappy-Wings/
 
 Features
 
-Real-time game loop using requestAnimationFrame
+Real-time game loop using request
+
+AnimationFrame
 
 Canvas-based rendering for bird, pipes, and environment
 
@@ -31,12 +33,11 @@ JavaScript (ES6+)
 
 HTML5 Canvas API
 
-(<Screenshot 2026-03-16 171733.png>)
+## Screenshots
 
+![Gameplay](<Screenshot 2026-03-16 171733.png>)
 
-
-
-(<Screenshot 2026-03-16 171801.png>)
+![Game Screen](<Screenshot 2026-03-16 171801.png>)
 
 Controls
 Action	Control
