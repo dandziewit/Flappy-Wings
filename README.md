@@ -1,140 +1,141 @@
-# Flappy Wings
+Flappy Wings
 
-A polished browser game inspired by classic Flappy-style gameplay, built with HTML5 Canvas, vanilla JavaScript, and modern CSS.
+Flappy Wings is a browser-based arcade game inspired by classic Flappy-style gameplay. Built with HTML5 Canvas and vanilla JavaScript, the project demonstrates real-time rendering, collision detection, and interactive game loop architecture.
 
-Flappy Wings emphasizes responsive controls, visual quality, and clean project structure. It is designed to be easy to run, easy to review, and easy to extend.
+The game focuses on responsive controls, smooth animations, and a clean, readable codebase designed to be easy to review and extend.
 
-## Why This Project
+Live Demo:
+https://dandziewit.github.io/Flappy-Wings/
 
-- Demonstrates game-loop architecture and collision detection in plain JavaScript.
-- Showcases custom canvas rendering (bird, pipes, layered sky effects).
-- Includes UX refinements for desktop and mobile controls.
-- Provides an approachable codebase for iteration and feature work.
+Features
 
-## Demo
+Real-time game loop using requestAnimationFrame
 
-Run locally and open:
+Canvas-based rendering for bird, pipes, and environment
 
-    http://localhost:8080/
+Collision detection system
 
-## Tech Stack
+Keyboard, mouse, and touch controls
 
-- HTML5
-- CSS3
-- JavaScript (ES6+)
-- Canvas 2D API
+Responsive gameplay for desktop and mobile
 
-## Quick Start
+Score tracking during gameplay
 
-### Option 1: Python (recommended)
+Tech Stack
+
+HTML5
+
+CSS3
+
+JavaScript (ES6+)
+
+HTML5 Canvas API
+
+(<Screenshot 2026-03-16 171733.png>)
+
+
+
+
+(<Screenshot 2026-03-16 171801.png>)
+
+Controls
+Action	Control
+Flap	Space
+Flap	Up Arrow
+Flap	Mouse Click
+Flap	Touch Tap
+Running Locally
+Python Server (Recommended)
 
 From the project folder:
 
-    py -m http.server 8080
+py -m http.server 8080
 
-If py is not available:
+or
 
-    python -m http.server 8080
-
-Then open:
-
-    http://localhost:8080/
-
-### Option 2: PowerShell lightweight server
-
-If you prefer PowerShell-only hosting, you can run a simple static file listener (as used during development).
-
-## Controls
-
-- Space: flap
-- Up Arrow: flap
-- Mouse click on canvas: flap
-- Touch tap on canvas: flap
-
-## Gameplay Notes
-
-- Pass through pipe gaps to score points.
-- High score is tracked during the session.
-- Ground collision ends the run.
-
-## Project Structure
-
-    Flappy Wings/
-    ├── index.html      # App shell and UI layout
-    ├── style.css       # Theme, responsive layout, and component styling
-    ├── script.js       # Game loop, rendering, input, collision, scoring
-    └── README.md
-
-## Architecture Overview
-
-- Entry point
-  - index.html loads styles and script, and defines canvas/UI elements.
-- Game state
-  - script.js manages bird state, pipe list, score, frame count, and game mode.
-- Main loop
-  - requestAnimationFrame drives updates and drawing.
-- Rendering
-  - Bird and pipe classes draw directly to canvas.
-  - Sky, clouds, glow, and layered effects are rendered each frame.
-- Input handling
-  - Keyboard, mouse, and touch routes through a unified primary action flow.
-
-## Troubleshooting
-
-### The game does not load on localhost
-
-- Confirm you started the server in the project root.
-- Confirm port 8080 is available.
-- Try a different port:
-
-    py -m http.server 8081
+python -m http.server 8080
 
 Then open:
 
-    http://localhost:8081/
+http://localhost:8080
+Project Structure
+Flappy Wings/
+├── index.html
+├── style.css
+├── script.js
+└── README.md
 
-### I hear no sound effects
+index.html
+Application entry point and canvas container.
 
-- Ensure sound files exist at:
-  - sounds/flap.mp3
-  - sounds/coin.mp3
-- Browser autoplay restrictions may block audio until first user input.
+style.css
+Layout styling, responsive behavior, and visual theme.
 
-### Controls are not responding
+script.js
+Core game logic including:
 
-- Click inside the browser tab once to ensure focus.
-- Start with the Start Game button, then use Space/Up Arrow.
-- On mobile, tap directly on the canvas area.
+game loop
 
-### Visuals look stretched on mobile
+rendering
 
-- Ensure viewport zoom is default and no browser text scaling overrides are active.
-- Use the latest Chrome, Edge, or Safari for best canvas behavior.
+collision detection
 
-## Collaboration Notes
+input handling
 
-### Suggested workflow
+score system
 
-1. Create a feature branch.
-2. Keep rendering and logic changes in separate commits when possible.
-3. Open a pull request with before/after screenshots or short clips.
+Architecture Overview
 
-### Good first improvements
+The game follows a lightweight interactive application architecture:
 
-- Add persistent high score via localStorage.
-- Add pause/resume support.
-- Add difficulty scaling over time.
-- Add weather/theme presets.
+Initialization
 
-## Recruiter Snapshot
+Canvas and UI elements load from index.html.
 
-Flappy Wings is a compact frontend game project that demonstrates:
+Game State Management
 
-- Practical JavaScript architecture for interactive apps.
-- Canvas-based rendering and animation fluency.
-- Attention to UX details across desktop and mobile.
-- Iterative product polish through small, testable changes.
+Bird state, pipe list, score, and game status tracked in script.js.
 
-## License
+Game Loop
 
-No license file is currently included. Add an MIT license if you want open-source reuse by default.
+requestAnimationFrame updates physics and rendering.
+
+Rendering
+
+Bird and pipe classes render to canvas each frame.
+
+Input Handling
+
+Keyboard, mouse, and touch inputs route through a unified flap action.
+
+Future Improvements
+
+Possible extensions for future development:
+
+Persistent high score using localStorage
+
+Pause / resume functionality
+
+Dynamic difficulty scaling
+
+Additional visual themes or weather effects
+
+Sound and animation polish
+
+Skills Demonstrated
+
+This project showcases:
+
+Canvas-based graphics rendering
+
+Real-time game loop architecture
+
+JavaScript event handling
+
+Collision detection logic
+
+Responsive UX design
+
+License
+
+MIT License
