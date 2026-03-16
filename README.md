@@ -28,9 +28,9 @@ The game focuses on responsive controls, smooth animations, and a clean, readabl
 
 
 
-![Gameplay](<Screenshot 2026-03-16 171733.png>)
+![Gameplay](<flappy 2.png>)
 
-![Game Screen](<Screenshot 2026-03-16 171801.png>)
+![Game Screen](<flappy.png>)
 
 ## Controls
 
