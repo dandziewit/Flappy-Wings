@@ -136,4 +136,8 @@ This project is licensed under the MIT License.
 
 ## Author
 
-Daniel Dziewit
+**Daniel Dziewit** — Aspiring IT & AI Engineer | Frontend Game Developer  
+- GitHub: `https://github.com/dandziewit`
+- Project: Electric Rush
+
+> Built as a showcase of frontend engineering, real-time gameplay systems, and client-side state management.
